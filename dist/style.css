@@ -1,0 +1,114 @@
+body {
+  font-family:sans-serif;
+}
+.container {
+  background-color: black;
+  -webkit-perspective: 5000px;
+          perspective: 5000px;
+  margin: 110px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}
+
+
+.doorFrame {
+  width: 240px;
+  height: 390px;
+  margin: 10px;
+  float: left;
+/*   background-color:blue; */
+  background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/90203443_1097525597268465_5594717321387048960_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=af1Yj3DdYU8AX8eZLiv&_nc_ht=scontent-syd2-1.xx&oh=26059dd934ec8a829f7fa989adec4834&oe=5E95783F");
+  color:#fff;
+  padding:5px 5px 2px 5px;
+}
+
+.door {
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+.door img {
+  width:100%;
+  height:100%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.swing {
+  cursor:pointer;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: box-shadow .5s, -webkit-transform .5s;
+  transition: box-shadow .5s, -webkit-transform .5s;
+  transition: transform .5s, box-shadow .5s;
+  transition: transform .5s, box-shadow .5s, -webkit-transform .5s;
+  -webkit-transform-origin: right center;
+          transform-origin: right center; 
+}
+
+.swing figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.door .front {
+  background-color:green;
+  width:240px;
+  height:390px;
+}
+
+.door .back {
+/*   background-color: blue; */
+  width:240px;
+  height:390px;
+}
+
+.swing .back {
+  -webkit-transform: rotateY( 180deg);
+          transform: rotateY( 180deg);
+}
+
+.swing:hover {
+  outline:3px solid white;
+}
+
+.swing.flipped {
+ -webkit-transform: rotateY( 120deg);
+         transform: rotateY( 120deg);
+  box-shadow: 0 0 15px 1px rgba(0,0,0,.75);
+}
+
+.popover {
+  position:absolute;
+  border:1px solid red;
+  width:200px;
+  height:200px;
+  background-color:#fff;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: box-shadow .5s;
+  transition: box-shadow .5s;
+  -webkit-transform:scale3d(0,0,0);
+          transform:scale3d(0,0,0);
+}
+
+.popover.open {
+  -webkit-transform:scale3d(1,1,1);
+          transform:scale3d(1,1,1); 
+}

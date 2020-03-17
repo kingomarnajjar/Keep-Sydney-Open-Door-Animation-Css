@@ -1,0 +1,99 @@
+body {
+  font-family:sans-serif;
+}
+.container {
+  background-color: black;
+  perspective: 5000px;
+  margin: 110px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}
+
+
+.doorFrame {
+  width: 240px;
+  height: 390px;
+  margin: 10px;
+  float: left;
+/*   background-color:blue; */
+  background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/90203443_1097525597268465_5594717321387048960_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=af1Yj3DdYU8AX8eZLiv&_nc_ht=scontent-syd2-1.xx&oh=26059dd934ec8a829f7fa989adec4834&oe=5E95783F");
+  color:#fff;
+  padding:5px 5px 2px 5px;
+}
+
+.door {
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+.door img {
+  width:100%;
+  height:100%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.swing {
+  cursor:pointer;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  transform-style: preserve-3d;
+  transition: transform .5s, box-shadow .5s;
+  transform-origin: right center; 
+}
+
+.swing figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.door .front {
+  background-color:green;
+  width:240px;
+  height:390px;
+}
+
+.door .back {
+/*   background-color: blue; */
+  width:240px;
+  height:390px;
+}
+
+.swing .back {
+  transform: rotateY( 180deg);
+}
+
+.swing:hover {
+  outline:3px solid white;
+}
+
+.swing.flipped {
+ transform: rotateY( 120deg);
+  box-shadow: 0 0 15px 1px rgba(0,0,0,.75);
+}
+
+.popover {
+  position:absolute;
+  border:1px solid red;
+  width:200px;
+  height:200px;
+  background-color:#fff;
+  transition: transform .5s;
+  transition: box-shadow .5s;
+  transform:scale3d(0,0,0);
+}
+
+.popover.open {
+  transform:scale3d(1,1,1); 
+}
