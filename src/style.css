@@ -46,7 +46,7 @@ body {
   box-shadow: 0 0 0 0 rgba(0,0,0,0);
   transform-style: preserve-3d;
   transition: transform .5s, box-shadow .5s;
-  transform-origin: right center; 
+  transform-origin: right center;
 }
 
 .swing figure {
@@ -95,5 +95,5 @@ body {
 }
 
 .popover.open {
-  transform:scale3d(1,1,1); 
+  transform:scale3d(1,1,1);
 }
