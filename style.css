@@ -20,7 +20,7 @@ body {
   margin: 10px;
   float: left;
 /*   background-color:blue; */
-  background-image: url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.15752-0/p280x280/90203443_1097525597268465_5594717321387048960_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=af1Yj3DdYU8AX8eZLiv&_nc_ht=scontent-syd2-1.xx&oh=26059dd934ec8a829f7fa989adec4834&oe=5E95783F");
+  background-image: url("crononavirus-meets-kso.png");
   color:#fff;
   padding:5px 5px 2px 5px;
 }
@@ -52,7 +52,7 @@ body {
   transition: transform .5s, box-shadow .5s;
   transition: transform .5s, box-shadow .5s, -webkit-transform .5s;
   -webkit-transform-origin: right center;
-          transform-origin: right center; 
+          transform-origin: right center;
 }
 
 .swing figure {
@@ -110,5 +110,5 @@ body {
 
 .popover.open {
   -webkit-transform:scale3d(1,1,1);
-          transform:scale3d(1,1,1); 
+          transform:scale3d(1,1,1);
 }

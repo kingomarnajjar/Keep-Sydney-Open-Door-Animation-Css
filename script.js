@@ -7,9 +7,12 @@ $('.doorFrame').click(function(event){
   var doorFrame = $(event.currentTarget)
   // open door
   doorFrame.find('.swing').toggleClass('flipped');
-  
+
   /*
   // move the overlay
   $('.popover').css('top', doorFrame.offset().top - 60 + "px").css('left', doorFrame.offset().left - 70 + "px").toggleClass('open');
 */
+$('.doorFrame').click(function() {
+  window.location='https://www.keepsydneyopen.com';
+});
 });
